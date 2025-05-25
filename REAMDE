@@ -22,7 +22,10 @@ Each directory contains the following files:
 | File                | Description |
 |---------------------|-------------|
 | `*.svg` / `*.pdf`   | BPMN choreography diagram |
-| `*.cpn`             | CPN model implementing the t-PNID mapping and ASK-CTL query for verification |
+| `*.cpn`             | CPN model implementing the t-PNID translation and ASK-CTL query for verification |
+| `*.png`             | Illustration of the CPN model implementing the t-PNID translation |
+
+- `conflict-detection.sml` – SML source file implementing the main function used to detect conflicting object views
 
 ---
 
@@ -52,4 +55,5 @@ A short screencast demonstrating the workflow is included in the repository root
 
 ## Notes
 
-- All CPN models are finite and bounded to support full state space generation in ASK-CTL
+- All CPN models are finite and bounded to support full state space generation in ASK-CTL  
+- The SML code in `conflict-detection.sml` provides the core implementation of the invariant used for verification

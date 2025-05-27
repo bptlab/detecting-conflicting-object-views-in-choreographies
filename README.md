@@ -33,9 +33,9 @@ Each `results/` subdirectory contains `.png` files visualizing the outcome of AS
 
 | Scenario Type                       | File Pattern                             | Description                                                                 |
 |------------------------------------|------------------------------------------|-----------------------------------------------------------------------------|
-| Single-instance execution          | `I1-P1-R1-A1-[true|false].png`           | A single choreography instance with one patient, radiology, and appointment |
-| Multi-instance, identical patients | `I2-P1-R1-A1-[true|false].png`           | Two concurrent instances with the same patient                              |
-| Multi-instance, distinct patients  | `I2-P2-R1-A1-[true|false].png`           | Two concurrent instances with different patients                            |
+| Single-instance execution          | `I1-P1-R1-A1-[true/false].png`           | A single choreography instance with one patient, radiology, and appointment |
+| Multi-instance, identical patients | `I2-P1-R1-A1-[true/false].png`           | Two concurrent instances with the same patient                              |
+| Multi-instance, distinct patients  | `I2-P2-R1-A1-[true/false].png`           | Two concurrent instances with different patients                            |
 
 Each filename ends in `-true.png` if the choreography was verified to be **conflict-free**, and `-false.png` if **conflicts were detected**.
 

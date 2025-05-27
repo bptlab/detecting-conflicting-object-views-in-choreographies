@@ -34,7 +34,7 @@ Each directory contains the following files:
 ### Requirements
 
 - [CPN Tools](https://cpntools.org) (tested on version 4.0.1)
-- The newer CPN IDE is **not yet tested** with this artifact
+- The newer CPN IDE is **not yet tested** with this artifact due to the lack of support for ASK-CTL
 
 ### Steps
 
@@ -56,4 +56,3 @@ A short screencast demonstrating the workflow is included in the repository root
 ## Notes
 
 - All CPN models are finite and bounded to support full state space generation in ASK-CTL  
-- The SML code in `conflict-detection.sml` provides the core implementation of the invariant used for verification

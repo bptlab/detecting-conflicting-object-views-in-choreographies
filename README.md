@@ -9,6 +9,20 @@ It provides the source models and verification setup used to evaluate the detect
 
 ---
 
+## Scenario
+
+This repository investigates an appointment scheduling scenario in a radiology department, as presented in the paper. This scenario serves as the baseline model. The corresponding BPMN choreography is illustrated below.
+
+![Baseline BPMN Choreography Model](baseline/choreography_diagram_baseline.svg)
+
+Following the translation approach described in the paper, we transformed the baseline choreography into a typed Petri Net with Identifiers (t-PNID) that captures its object-centric semantics. This net was then encoded as a Colored Petri Net in CPN Tools, as shown below.
+
+![Baseline Object-Centric Semantics](baseline/semantics_baseline.png)
+
+In addition to the baseline model, this repository also includes two variations that implement optimistic and pessimistic coordination patterns, respectively. The models and corresponding verification results can be found in the respective directories.
+
+---
+
 ## Repository Structure
 
 The repository contains three directories, each corresponding to a variant of the appointment scheduling choreography model:
